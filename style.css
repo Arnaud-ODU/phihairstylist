@@ -19,10 +19,6 @@ header {
 
 }
 
-h1 {
-    padding: 0 20px; /* Adds 20px padding on the left and right */
-}
-
 .menu-btn {
     display: none;
     font-size: 2em;
@@ -31,8 +27,8 @@ h1 {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px;
     display: flex;
 }
 
