@@ -7,8 +7,11 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f8f8f8;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 .menu-btn {
@@ -20,11 +23,12 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav a {
@@ -44,16 +48,22 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
     .menu-btn {
         display: block;
     }
 
     nav ul {
+        flex-direction: column;
+        align-items: flex-start;
         display: none;
     }
 
-    .menu-btn.active + nav ul {
-        display: block;
-        text-align: center;
+    nav ul li {
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
