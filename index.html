@@ -8,28 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Hairstyling Studio</h1>
         <div class="menu-btn">☰</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Our Hairstyling Studio</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <!-- Content for Home -->
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <!-- Content for Gallery -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <!-- Content about services -->
         </section>
         <section id="about">
-            <h2>About Me</h2>
+            <h2>About Us</h2>
             <!-- Content about the hairstylist -->
         </section>
         <section id="contact">
@@ -42,15 +37,11 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.menu-btn');
-            const navUl = document.querySelector('nav ul');
-    
-            menuBtn.addEventListener('click', function() {
-                navUl.classList.toggle('active');
-            });
-        });
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('nav ul').classList.toggle('active');
+    });
     </script>
+
 </body>
 </html>
-
