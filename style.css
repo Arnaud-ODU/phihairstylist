@@ -11,12 +11,16 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 3em 1;
+    padding: 10em 0;
 
     background-image: url('Homepage Images/Banner-Image.png');
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Centers the image */
 
+}
+
+header h1 {
+    padding: 0 20px; /* Adds 20px padding on the left and right */
 }
 
 .menu-btn {
