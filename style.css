@@ -12,6 +12,11 @@ header {
     align-items: center;
     background-color: #f8f8f8;
     padding: 1em;
+
+    background-image: url('Homepage Images/Banner-Image.png'); /* Replace with the actual path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+
 }
 
 .menu-btn {
