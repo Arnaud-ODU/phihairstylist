@@ -17,6 +17,12 @@ nav ul li {
     margin-left: 20px;
 }
 
+nav ul li a {
+    display: block; /* Makes the entire area clickable */
+    padding: 10px 15px; /* Increases the tapping area */
+    font-size: 1.2em; /* Increases the font size for better readability */
+}
+
 @media screen and (max-width: 600px) {
     header {
         flex-direction: column;
@@ -27,13 +33,22 @@ nav ul li {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        display: none;
+        transition: max-height 0.5s ease-out; /* Slows down the opening */
+        overflow: hidden;
+        max-height: 0; /* Start with a max-height of 0 */
     }
+    
+    nav ul.active {
+        max-height: 500px; /* Adjust this value based on your content */
+    }
+    
 
     nav ul li {
         margin-top: 10px;
         margin-left: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 20px; /* Even larger tapping area for mobile */
     }
 }
