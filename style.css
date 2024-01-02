@@ -12,8 +12,6 @@ header {
     align-items: center;
     background-color: #f8f8f8;
     padding: 2em 0;
-    position: relative; /* Ensures that the header is the reference for absolute positioning */
-    width: 100%; /* Full width */
 
     background-image: url('Homepage Images/BannerImage.jpg');
     background-size: cover; /* Ensures the image covers the entire header */
