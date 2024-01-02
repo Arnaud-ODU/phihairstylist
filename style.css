@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 2em 0 100px;
+    padding: 2em 0 1000px;
 
     background-image: url('Homepage Images/BannerImage.jpg');
     background-size: cover; /* Ensures the image covers the entire header */
@@ -24,7 +24,6 @@ header {
     font-size: 2em;
     cursor: pointer;
     position: absolute; /* Absolute positioning within the header */
-    padding: 100px;
     top: 0; /* Align to the top */
     right: 0; /* Align to the right */
 }
