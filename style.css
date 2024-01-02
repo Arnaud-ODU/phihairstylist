@@ -19,18 +19,13 @@ header {
 
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: start; /* Adjust as needed */
-}
-
 .menu-btn {
-    display: flex;
+    display: none;
     font-size: 2em;
     cursor: pointer;
     position: absolute; /* Absolute positioning within the header */
-    padding: 0 15px; /* Adjust padding as needed */
+    top: 30; /* Align to the top */
+    right: 5; /* Align to the right */
 }
 
 nav ul {
