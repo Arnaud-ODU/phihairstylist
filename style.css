@@ -32,6 +32,16 @@ h1 {
     right: 20px; /* Align to the right */
 }
 
+.sub-header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Adjust text color for better readability */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
 nav ul {
     list-style-type: none;
     padding: 20px;
