@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 2em 0 1000px;
+    padding: 2em 0 300px;
 
     background-image: url('Homepage Images/BannerImage.jpg');
     background-size: cover; /* Ensures the image covers the entire header */
@@ -24,8 +24,8 @@ header {
     font-size: 2em;
     cursor: pointer;
     position: absolute; /* Absolute positioning within the header */
-    top: 20px; /* Align to the top */
-    right: 0px; /* Align to the right */
+    top: 30px; /* Align to the top */
+    right: 20px; /* Align to the right */
 }
 
 nav ul {
