@@ -41,10 +41,15 @@
         <p>© 2024 PhiHairstylist</p>
     </footer>
 
-    <script>document.querySelector('.menu-btn').addEventListener('click', function() {
-        this.classList.toggle('active');
-        document.querySelector('nav ul').classList.toggle('active');
-    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navUl = document.querySelector('nav ul');
+    
+            menuBtn.addEventListener('click', function() {
+                navUl.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>
