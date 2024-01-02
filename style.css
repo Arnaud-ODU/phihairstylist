@@ -28,7 +28,7 @@ h1 {
     font-size: 2em;
     cursor: pointer;
     position: absolute; /* Absolute positioning within the header */
-    top: 30px; /* Align to the top */
+    top: 50px; /* Align to the top */
     right: 20px; /* Align to the right */
 }
 
