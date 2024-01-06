@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="touchTouch-main/src/touchTouch.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hairstylist Home</title>
+    <title>Phi Hairstylist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-            <h1> Phi Hairstylist </h1>
-            <div class="menu-btn">☰</div>
-        <nav>
+        <img src="Homepage Images/Profile-Picture.png" alt="Logo" class="header-logo">
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -18,15 +19,43 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-box">
+            <img src="Homepage Images/Logo-1.png" alt="Your Image" class="header-image">
+            <div class="header-text">Style and beauty professional</div>
+        </div>
     </header>
     <main>
         <section id="home">
-            <h2>Home</h2>
-            <!-- Content for Home -->
+            <section id="ThirtySeventySection">
+                <div class="left-part">
+                    <img src="Homepage Images/Section1.jpeg" alt="Your Image">
+                </div>
+                <div class="right-part">
+                    <div class="title-area">When it comes to hairstyle, I'm your gal! We will find the style that best matches your personality.</div>
+                    <div class="quote-area">"Phi is an amazing stylist, I always leave happy and she really listens to what I want. She is also so friendly and easy to talk to. I love the keratin treatment I did with her. I highly recommend this salon for Phi’s great hair cuts and their kind customer service."</div>
+                    <div class="citation-area">- Mariana Nabila Evans</div>
+                </div>
+            </section>
         </section>
         <section id="gallery">
-            <h2>Gallery</h2>
-            <!-- Content for Gallery -->
+            <section id="ThirtySeventySection">
+                <div class="left-part">
+                    <div class="title-area">Tailored To Your Personality</div>
+                    <div class="quote-area">"Phi is an awesome hair stylist. Her expertise is definitely color. […] Phi knew exactly what I wanted in my color […] She has colored my hair twice in the past 4 months & the color & cut are perfect. She is dependable, sweet, & available!"</div>
+                    <div class="citation-area">- Mary Ledford</div>
+                </div>
+                <div class="right-part">
+                    <div class="gallery">
+                        <a class="magnifier" href="Homepage Images/Mosaic/IMG_2633.jpeg">
+                          <img src="Homepage Images/Mosaic/IMG_2633-scaled.jpeg" />
+                        </a>
+                        <a class="magnifier" href="Homepage Images/Mosaic/IMG_4968.jpg">
+                          <img src="Homepage Images/Mosaic/IMG_4968-scaled.jpg" />
+                        </a>
+                      </div>
+                      
+                </div>
+            </section>
         </section>
         <section id="about">
             <h2>About Me</h2>
@@ -50,6 +79,13 @@
                 navUl.classList.toggle('active');
             });
         });
+    </script>
+    
+    <script src="touchTouch-main/src/touchTouch.js"></script>
+    <script>
+        // multiple instances
+        touchTouch(document.getElementById('gallery').querySelectorAll('.magnifier'), {showCaption:true,customCaption:true});
+        const t = touchTouch([{href:"Homepage Images/Mosaic/IMG_2633.jpeg"},{href:"Homepage Images/Mosaic/IMG_4968.jpg"}], {auto:true,fit:0.8,fitsize:600});
     </script>
 </body>
 </html>
