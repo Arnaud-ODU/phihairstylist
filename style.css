@@ -6,6 +6,12 @@ body {
     text-align: center;
 }
 
+#my-gallery img {
+    width: 171px; /* Set the width of the thumbnail */
+    height: 226px; /* Set the height of the thumbnail */
+    object-fit: cover; /* This will ensure the images cover the area without stretching */
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -110,6 +116,8 @@ footer {
 }
 
 #ThirtySeventySection {
+    max-width: 1300px;
+    margin: 0 auto; /* This centers your page */
     display: flex;
     justify-content: space-between;
 }
@@ -165,6 +173,12 @@ footer {
     height: auto; /* Maintain the aspect ratio */
 }
 
+.gallery {
+    width: 800px; /* or any other width suitable for large screens */
+    margin: 0 auto; /* This centers the gallery */
+    /* Other styling as needed */
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -192,5 +206,10 @@ footer {
     .left-part, .right-part {
         width: 85%; /* Full width for small screens */
         padding-left: 7%;
+    }
+    .gallery {
+        width: 100%; /* Full width on small screens */
+        flex-direction: column;
+        /* Additional responsive styling if needed */
     }
 }

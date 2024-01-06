@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="touchTouch-main/src/touchTouch.css" />
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe/dist/photoswipe.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phi Hairstylist</title>
@@ -45,15 +45,26 @@
                     <div class="citation-area">- Mary Ledford</div>
                 </div>
                 <div class="right-part">
-                    <div class="gallery">
-                        <a class="magnifier" href="Homepage Images/Mosaic/IMG_2633.jpeg">
-                          <img src="Homepage Images/Mosaic/IMG_2633-scaled.jpeg" />
+                    <div id="my-gallery" class="pswp-gallery" data-pswp-uid="1">
+                        <a href="Homepage Images/Mosaic/IMG_2633.jpeg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <img src="Homepage Images/Mosaic/IMG_2633.jpeg" alt="Image 1">
                         </a>
-                        <a class="magnifier" href="Homepage Images/Mosaic/IMG_4968.jpg">
-                          <img src="Homepage Images/Mosaic/IMG_4968-scaled.jpg" />
+                        <a href="Homepage Images/Mosaic/IMG_4968.jpg" data-pswp-width="960" data-pswp-height="1280" target="_blank">
+                            <img src="Homepage Images/Mosaic/IMG_4968.jpg" alt="Image 2">
                         </a>
-                      </div>
-                      
+                        <a href="Homepage Images/Mosaic/IMG_3586.jpeg" data-pswp-width="960" data-pswp-height="1280" target="_blank">
+                            <img src="Homepage Images/Mosaic/IMG_3586.jpeg" alt="Image 2">
+                        </a>
+                        <a href="Homepage Images/Mosaic/IMG_5123.jpeg" data-pswp-width="743" data-pswp-height="1280" target="_blank">
+                            <img src="Homepage Images/Mosaic/IMG_5123.jpeg" alt="Image 2">
+                        </a>
+                        <a href="Homepage Images/Mosaic/FC_20210906_0005.jpg" data-pswp-width="1742" data-pswp-height="2560" target="_blank">
+                            <img src="Homepage Images/Mosaic/FC_20210906_0005.jpg" alt="Image 2">
+                        </a>
+                        <a href="Homepage Images/Mosaic/IMG_2412-2.jpeg" data-pswp-width="1920" data-pswp-height="2560" target="_blank">
+                            <img src="Homepage Images/Mosaic/IMG_2412-2.jpeg" alt="Image 2">
+                        </a>
+                    </div>
                 </div>
             </section>
         </section>
@@ -82,10 +93,16 @@
     </script>
     
     <script src="touchTouch-main/src/touchTouch.js"></script>
-    <script>
-        // multiple instances
-        touchTouch(document.getElementById('gallery').querySelectorAll('.magnifier'), {showCaption:true,customCaption:true});
-        const t = touchTouch([{href:"Homepage Images/Mosaic/IMG_2633.jpeg"},{href:"Homepage Images/Mosaic/IMG_4968.jpg"}], {auto:true,fit:0.8,fitsize:600});
+
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.min.js')
+        });
+        lightbox.init();
     </script>
+
 </body>
 </html>
