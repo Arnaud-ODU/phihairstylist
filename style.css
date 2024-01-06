@@ -139,7 +139,7 @@ footer {
 .title-area {
     margin-bottom: 20px; /* Space between text areas */
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: x-large;
+    font-size:xx-large;
     text-align: left;
     font-weight: 200;
     color: #dc4788;
@@ -161,7 +161,7 @@ footer {
 .citation-area {
     margin-bottom: 20px; /* Space between text areas */
     padding-top: 5%;
-    font-family: 'Sarina', sans-serif;
+    font-family: 'Zapfino', sans-serif;
     font-size: large;
     text-align: right;
     color: rgb(38, 38, 38);
@@ -207,9 +207,9 @@ footer {
         width: 85%; /* Full width for small screens */
         padding-left: 7%;
     }
-    .gallery {
-        width: 100%; /* Full width on small screens */
-        flex-direction: column;
-        /* Additional responsive styling if needed */
+    #my-gallery img {
+        width: 342px; /* Set the width of the thumbnail */
+        height: 452px; /* Set the height of the thumbnail */
+        object-fit: cover; /* This will ensure the images cover the area without stretching */
     }
 }
