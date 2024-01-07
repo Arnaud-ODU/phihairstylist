@@ -158,6 +158,26 @@ footer {
     /* Add additional styling for text areas here */
 }
 
+.More-area {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    padding-top: 2.5%;
+    font-size:x-large;
+    font-weight: 200;
+    text-align: center;
+    color: #dc4788;
+    /* Add additional styling for text areas here */
+}
+
+.citation-area {
+    margin-bottom: 20px; /* Space between text areas */
+    padding-top: 5%;
+    font-family: 'Zapfino', sans-serif;
+    font-size: large;
+    text-align: right;
+    color: rgb(38, 38, 38);
+    /* Add additional styling for text areas here */
+}
+
 .citation-area {
     margin-bottom: 20px; /* Space between text areas */
     padding-top: 5%;
@@ -179,6 +199,57 @@ footer {
     /* Other styling as needed */
 }
 
+.social-media-links {
+    text-align: center; /* Center the links */
+    margin-top: 20px; /* Space above the links */
+}
+
+.social-media-links a {
+    margin-right: 10px; /* Space between the links */
+    display: inline-block; /* Align links in a line */
+}
+
+.social-media-links img {
+    width: 40px; /* Adjust icon size */
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#AboutMeSection {
+    max-width: 1000px;
+    margin: 0 auto; /* This centers your page */
+    display: flex;
+    justify-content: space-between;
+    background-image: url('Homepage Images/Salon.jpg');
+}
+
+.AboutMeBox {
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.75); /* White with 50% transparency */
+    padding: 20px;
+    text-align: center;
+}
+
+.AboutMetitle-area {
+    padding: 20px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:xx-large;
+    text-align: left;
+    font-weight: 200;
+    color: #dc4788;
+
+    /* Add additional styling for text areas here */
+}
+
+.AboutMequote-area {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size:medium;
+    text-align: left;
+    line-height: 1.5em;
+    color: rgb(0, 0, 0);
+    /* Add additional styling for text areas here */
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
