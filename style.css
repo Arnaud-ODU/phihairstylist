@@ -221,6 +221,8 @@ footer {
     display: flex;
     justify-content: space-between;
     background-image: url('Homepage Images/Salon.jpg');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .AboutMeBox {
